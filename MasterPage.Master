@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="AXT.PublicSite.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            width: 99%;
+        }
+        .auto-style6 {
+            font-size: large;
+        }
+        .auto-style15 {
+            width: 115px;
+        }
+        .auto-style17 {
+            width: 170px;
+        }
+        .auto-style18 {
+            width: 140px;
+        }
+        .auto-style19 {
+            width: 150px;
+        }
+        .auto-style20 {
+            width: 214px;
+        }
+        .auto-style21 {
+            width: 101px;
+        }
+    </style>
+</head>
+<body background="http://www.gmbforum.com/wp-content/uploads/2015/11/green_backgrounds_for_websites2.jpg">
+    <form id="form1" runat="server">
+    <div>
+        
+        <h1>
+            <font face="Lucida Grande, Tahoma" size="36">Axolotl Solutions</font>
+            <table class="auto-style3" bgcolor="black">
+          <img src="http://i193.photobucket.com/albums/z297/urielolozo/axt.gif" alt="Axolotl" style="width:60px;height:75px;">
+                <tr>
+                    <td class="auto-style18">
+                        <asp:HyperLink ID="hlHome" runat="server" CssClass="auto-style6" Font-Bold="True" Font-Underline="True" ForeColor="White" NavigateUrl="~/Default.aspx" Target="~/Default.aspx">Home</asp:HyperLink>
+                    </td>
+                    <td class="auto-style17">
+                        <asp:HyperLink ID="hlCreateUser" runat="server" Font-Bold="True" ForeColor="White" NavigateUrl="~/CreateUser.aspx" CssClass="auto-style6">New User</asp:HyperLink>
+                    </td>
+                    <td class="auto-style19" aria-disabled="False">
+                        <asp:HyperLink ID="hlLogin" runat="server" Font-Bold="True" ForeColor="White" NavigateUrl="~/Login.aspx" CssClass="auto-style6">Login</asp:HyperLink>
+                    </td>
+                    <td class="auto-style20">
+                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#CCFFFF" NavigateUrl="~/UpdateUser.aspx">Update User</asp:HyperLink>
+                    </td>
+                    <td class="auto-style21">
+                        <asp:HyperLink ID="hlAbout" runat="server" Font-Bold="True" ForeColor="White" NavigateUrl="~/AboutAXT.aspx" CssClass="auto-style6" Target="~/AboutAXT.aspx">About Us</asp:HyperLink>
+                    </td>
+                    <td class="auto-style15">
+                        <asp:HyperLink ID="hlCareerList" runat="server" Font-Size="Large" ForeColor="White" NavigateUrl="~/CareerList.aspx">Career List</asp:HyperLink>
+                    </td>
+                    <td class="auto-style15">
+                        <asp:HyperLink ID="hlWebService" runat="server" Font-Size="Large" ForeColor="White" NavigateUrl="~/TheWebService.asmx">Web Service</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:HyperLink ID="hlLogout" runat="server" CssClass="auto-style6" Font-Bold="True" Font-Underline="True" ForeColor="White" NavigateUrl="~/Login.aspx" Target="~/Login.aspx" Visible="False">Logout</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style18">
+                        <asp:HyperLink ID="hlNewJob" runat="server" Font-Size="Medium" ForeColor="White" NavigateUrl="~/NewPropertyJobInsert.aspx">New Property Job</asp:HyperLink>
+                    </td>
+                    <td class="auto-style17">
+                        <asp:HyperLink ID="hlAddReference" runat="server" Font-Bold="True" Font-Size="Medium" ForeColor="White" NavigateUrl="~/InsertReferenceParty.aspx">Add Reference Party</asp:HyperLink>
+                    </td>
+                    <td class="auto-style19" aria-disabled="False">
+                        <asp:HyperLink ID="hlPropertySearch" runat="server" Font-Size="Medium" ForeColor="White" NavigateUrl="~/PropertySearch.aspx">Property Search</asp:HyperLink>
+                    </td>
+                    <td class="auto-style20">
+                        <asp:HyperLink ID="hlReferencePartySearch" runat="server" Font-Size="Medium" ForeColor="White" NavigateUrl="~/ReferencePartySearch.aspx">Reference Party Search</asp:HyperLink>
+                    </td>
+                    <td class="auto-style21">
+                        &nbsp;</td>
+                    <td class="auto-style15">
+                        &nbsp;</td>
+                    <td class="auto-style15">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+        
+        </h1>
+    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
